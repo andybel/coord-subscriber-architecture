@@ -1,0 +1,26 @@
+[
+    {
+        "userId": 1,
+        "id": 1,
+        "title": "mock article 1",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "userId": 1,
+        "id": 2,
+        "title": "mock article 2",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "userId": 1,
+        "id": 2,
+        "title": "mock article 3",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "userId": 1,
+        "id": 2,
+        "title": "mock article 4",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+]

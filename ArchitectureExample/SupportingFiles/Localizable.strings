@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Arch List PLay
+
+  Created by Andy Bell on 26.02.19.
+  Copyright © 2019 snapp mobile. All rights reserved.
+*/
+
+"article"="Article";
+"articles"="Articles";
+"cancel"="Cancel";
+"error"="Error!";
+"comments_count"="%i comment(s)";

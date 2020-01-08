@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Article View Controller-->
+        <scene sceneID="cSA-Vk-JWJ">
+            <objects>
+                <viewController storyboardIdentifier="ArticleViewController" id="Eit-oP-cBr" customClass="ArticleViewController" customModule="ArchitectureExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ab-mC-Q7h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hug-7y-Vjs">
+                                <rect key="frame" x="16" y="85" width="343" height="582"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VM3-Xt-bfr">
+                                <rect key="frame" x="16" y="40" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AhI-xQ-kMn">
+                                <rect key="frame" x="177.5" y="333.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hug-7y-Vjs" firstAttribute="top" secondItem="VM3-Xt-bfr" secondAttribute="bottom" constant="16" id="GYA-eO-Pik"/>
+                            <constraint firstItem="AhI-xQ-kMn" firstAttribute="centerX" secondItem="8Mh-5w-732" secondAttribute="centerX" id="Hek-AN-3HN"/>
+                            <constraint firstItem="hug-7y-Vjs" firstAttribute="centerX" secondItem="8Mh-5w-732" secondAttribute="centerX" id="Lfm-7a-Ygi"/>
+                            <constraint firstItem="AhI-xQ-kMn" firstAttribute="centerY" secondItem="8Mh-5w-732" secondAttribute="centerY" id="Lrg-iN-LIG"/>
+                            <constraint firstItem="VM3-Xt-bfr" firstAttribute="leading" secondItem="8Mh-5w-732" secondAttribute="leading" constant="16" id="QAw-O0-bUu"/>
+                            <constraint firstItem="hug-7y-Vjs" firstAttribute="bottom" secondItem="8Mh-5w-732" secondAttribute="bottom" id="aZN-Ae-HrA"/>
+                            <constraint firstItem="8Mh-5w-732" firstAttribute="trailing" secondItem="VM3-Xt-bfr" secondAttribute="trailing" constant="16" id="awI-z9-I8S"/>
+                            <constraint firstItem="VM3-Xt-bfr" firstAttribute="top" secondItem="8Mh-5w-732" secondAttribute="top" constant="20" id="i03-Ak-4QL"/>
+                            <constraint firstItem="VM3-Xt-bfr" firstAttribute="centerX" secondItem="8Mh-5w-732" secondAttribute="centerX" id="nEv-Se-yhv"/>
+                            <constraint firstItem="hug-7y-Vjs" firstAttribute="width" secondItem="VM3-Xt-bfr" secondAttribute="width" id="spE-XB-NqD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Mh-5w-732"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainTextView" destination="hug-7y-Vjs" id="cBf-Jb-HLo"/>
+                        <outlet property="spinner" destination="AhI-xQ-kMn" id="8rZ-CA-b4b"/>
+                        <outlet property="titleLabel" destination="VM3-Xt-bfr" id="7Db-Mw-wJt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d23-dI-1gV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95.200000000000003" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>
